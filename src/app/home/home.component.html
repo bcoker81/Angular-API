@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-header bg-dark">
+    <h3 style="text-align: left; color: antiquewhite;">Grants</h3>
+  </div>
+  <div class="card-body">
+    <table class="table table-striped">
+      <tr>
+        <th>Grant ID</th>
+        <th>Grant Name</th>
+        <th>Division</th>
+        <th>Deleted</th>
+        <th>Grant Number</th>
+        <th>Nick Name</th>
+      </tr>
+      <tr *ngFor='let grant of data'>
+        <td>{{grant.id}}</td>
+        <td>{{grant.grantName}}</td>
+        <td>{{grant.division}}</td>
+        <td>{{grant.isDeleted}}</td>
+        <td>{{grant.mshpGrantNumber}}</td>
+        <td>{{grant.nickName}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
